@@ -1,0 +1,7 @@
+streamlit>=1.22.0
+ultralytics==8.0.20
+opencv-python
+numpy
+Pillow
+matplotlib
+scikit-learn

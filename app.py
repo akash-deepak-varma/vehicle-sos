@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 # Load model once
 @st.cache_resource
 def load_model():
-    return YOLO("FINAL_CODE/FINAL_CODE/model.pt")
+    return YOLO("\FINAL_CODE\model.pt")
 
 model = load_model()
 

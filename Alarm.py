@@ -30,9 +30,9 @@ def get_dominant_color_name(image, box):
     return rgb_to_name(dominant_color)
 
 # Load YOLO model and run detection
-model = YOLO(r"FINAL_CODE\FINAL_CODE\model.pt")
-img_path = r"FINAL_CODE\FINAL_CODE\images.jpg"
-results = model.predict(source=img_path, conf=0.4, save=True)
+model = YOLO(r"FINAL_CODE\model.pt")
+img_path = r"FINAL_CODE\images.jpg"
+results = model.predict(source=img_path, conf=0.7, save=True)
 
 output_img = os.path.join(results[0].save_dir, os.path.basename(img_path))
 image_cv = cv2.imread(output_img)

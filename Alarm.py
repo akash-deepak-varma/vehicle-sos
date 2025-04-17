@@ -31,7 +31,7 @@ def get_dominant_color_name(image, box):
 
 # Load YOLO model and run detection
 model = YOLO(r"FINAL_CODE\model.pt")
-img_path = r"FINAL_CODE\images.jpg"
+img_path = r"images.jpg"
 results = model.predict(source=img_path, conf=0.7, save=True)
 
 output_img = os.path.join(results[0].save_dir, os.path.basename(img_path))
